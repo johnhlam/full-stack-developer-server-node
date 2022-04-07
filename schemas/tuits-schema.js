@@ -12,6 +12,10 @@ const schema = mongoose.Schema({
   handle: String,
   'logo-image': String,
   'avatar-image': String,
+  attachments: {
+    video: String,
+    image: String,
+  },
   stats: {
     comments: Number,
     retuits: Number,
