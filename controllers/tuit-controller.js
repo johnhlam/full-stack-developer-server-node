@@ -10,7 +10,6 @@ const tuitController = (app) => {
 // Creates a new tuit with the given fields
 const createTuit = async (req, res) => {
   const newTuit = req.body;
-  newTuit.likes = 0;
   const insertedTuit = await tuitsDao.createTuit(newTuit)
   res.json(insertedTuit);
 };
